@@ -2,6 +2,7 @@ import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import PainPoints from "@/components/landing/PainPoints";
 import Features from "@/components/landing/Features";
+import OmnichannelSection from "@/components/landing/OmnichannelSection";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Security from "@/components/landing/Security";
 import CTA from "@/components/landing/CTA";
@@ -15,6 +16,7 @@ const Index = () => {
         <Hero />
         <PainPoints />
         <Features />
+        <OmnichannelSection />
         <HowItWorks />
         <Security />
         <CTA />
