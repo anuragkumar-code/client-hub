@@ -25,13 +25,20 @@ const CTA = () => {
               </Button>
             </Link>
             <Link to="/login">
-              <Button 
+                          <Button 
                 variant="outline" 
                 size="xl"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                className="
+                  border-primary-foreground/30 
+                  
+                  hover:bg-primary-foreground 
+                  hover:text-accent
+                  transition-colors
+                "
               >
                 Already have an account?
               </Button>
+
             </Link>
           </div>
         </div>
