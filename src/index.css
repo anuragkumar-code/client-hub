@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -16,25 +16,25 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - Muted slate blue */
-    --primary: 215 25% 27%;
+    /* Primary - Rich Brown */
+    --primary: 28 55% 35%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Light gray */
-    --secondary: 210 20% 96%;
+    /* Secondary - Warm Gray */
+    --secondary: 30 10% 96%;
     --secondary-foreground: 222 47% 11%;
 
-    /* Muted - Soft gray */
-    --muted: 210 20% 96%;
+    /* Muted - Soft warm gray */
+    --muted: 30 10% 96%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent - Subtle teal */
-    --accent: 174 42% 41%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Vibrant Orange */
+    --accent: 32 95% 55%;
+    --accent-foreground: 0 0% 98%;
 
-    /* Accent secondary - Lighter teal for backgrounds */
-    --accent-soft: 174 30% 95%;
-    --accent-soft-foreground: 174 42% 30%;
+    /* Accent secondary - Light orange for backgrounds */
+    --accent-soft: 32 80% 95%;
+    --accent-soft-foreground: 32 95% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -54,9 +54,12 @@
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.04);
-    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.06), 0 2px 4px -2px hsl(222 47% 11% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.08), 0 4px 6px -4px hsl(222 47% 11% / 0.06);
-    --shadow-card: 0 1px 3px 0 hsl(222 47% 11% / 0.05), 0 1px 2px -1px hsl(222 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.06),
+      0 2px 4px -2px hsl(222 47% 11% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.08),
+      0 4px 6px -4px hsl(222 47% 11% / 0.06);
+    --shadow-card: 0 1px 3px 0 hsl(222 47% 11% / 0.05),
+      0 1px 2px -1px hsl(222 47% 11% / 0.05);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -78,20 +81,20 @@
     --popover: 222 47% 8%;
     --popover-foreground: 210 20% 96%;
 
-    --primary: 210 20% 96%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 28 50% 45%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 20% 96%;
+    --secondary: 30 20% 17%;
+    --secondary-foreground: 30 10% 96%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 30 20% 17%;
+    --muted-foreground: 30 10% 65%;
 
-    --accent: 174 42% 45%;
+    --accent: 32 95% 60%;
     --accent-foreground: 222 47% 11%;
 
-    --accent-soft: 174 30% 15%;
-    --accent-soft-foreground: 174 42% 60%;
+    --accent-soft: 32 80% 15%;
+    --accent-soft-foreground: 32 95% 65%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 20% 96%;
@@ -128,7 +131,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 }
 

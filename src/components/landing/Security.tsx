@@ -1,6 +1,11 @@
-import { Shield, Lock, FileText, Key } from "lucide-react";
+import { Shield, Lock, FileText, Key, MessageCircle, Globe } from "lucide-react";
 
 const securityFeatures = [
+  {
+    icon: Globe,
+    title: "Communication from all channels",
+    description: "All your emails, chats, and tickets brought together in one secure, encrypted hub."
+  },
   {
     icon: Shield,
     title: "Role-based access control",
@@ -31,18 +36,18 @@ const Security = () => {
           {/* Left content */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-              Built with security in mind
+              All your needs, securely manageable
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We take data protection seriously. Your customer information is 
-              safeguarded with enterprise-grade security measures, so you can 
-              focus on your business.
+              We bring every communication channel into one fortified place. 
+              Your customer data is safeguarded with enterprise-grade security 
+              while remaining easily accessible to your team.
             </p>
 
             <div className="space-y-6">
               {securityFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent-soft flex items-center justify-center">
+                <div key={index} className="flex items-start gap-4 group">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent-soft flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <feature.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
@@ -59,25 +64,30 @@ const Security = () => {
           </div>
 
           {/* Right illustration - abstract security visual */}
-          <div className="relative">
-            <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-accent-soft to-secondary rounded-2xl p-8 flex items-center justify-center">
-              <div className="relative w-full h-full flex items-center justify-center">
-                {/* Concentric circles */}
-                <div className="absolute w-full h-full rounded-full border border-accent/20 animate-pulse" />
-                <div className="absolute w-3/4 h-3/4 rounded-full border border-accent/30" />
-                <div className="absolute w-1/2 h-1/2 rounded-full border border-accent/40" />
+          <div className="relative animate-fade-in delay-200">
+            <div className="relative aspect-square max-w-md mx-auto flex items-center justify-center p-4">
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent blur-3xl" />
+              
+              {/* Image Container with Float Animation */}
+              <div className="relative w-full h-full animate-float">
+                <img 
+                  src="/secure-hub.png" 
+                  alt="Secure Communication Hub" 
+                  className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                />
                 
-                {/* Center shield */}
-                <div className="w-20 h-20 rounded-2xl bg-card shadow-custom-lg flex items-center justify-center">
-                  <Shield className="w-10 h-10 text-accent" />
-                </div>
-
-                {/* Floating icons */}
-                <div className="absolute top-8 right-8 w-12 h-12 rounded-xl bg-card shadow-custom-md flex items-center justify-center">
-                  <Lock className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <div className="absolute bottom-12 left-8 w-12 h-12 rounded-xl bg-card shadow-custom-md flex items-center justify-center">
-                  <Key className="w-5 h-5 text-muted-foreground" />
+                {/* Floating Badge overlay */}
+                <div className="absolute -bottom-6 -right-6 bg-card/80 backdrop-blur-md p-4 rounded-xl border border-border shadow-custom-lg animate-bounce-subtle hidden sm:block">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-green-600" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground font-medium">Status</p>
+                      <p className="text-sm font-bold text-foreground">All Channels Secured</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,5 +97,4 @@ const Security = () => {
     </section>
   );
 };
-
 export default Security;
