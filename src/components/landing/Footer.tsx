@@ -26,6 +26,9 @@ const Footer = () => {
             <Link to="/register" className="text-sm link-subtle">
               Register
             </Link>
+            <Link to="/forgot-password" className="text-sm link-subtle">
+              Forgot Password
+            </Link>
             <a href="#" className="text-sm link-subtle">
               Terms
             </a>
