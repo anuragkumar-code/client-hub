@@ -57,16 +57,16 @@ const PainPoints = () => {
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-destructive" />
+                  <div className="w-10 h-10 rounded-lg bg-amber-200 flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-amber-700" />
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="text-muted-foreground text-sm mb-2 line-through decoration-destructive/40">
+                  <p className="text-muted-foreground text-sm mb-2 line-through decoration-amber-400 decoration-1">
                     {item.problem}
                   </p>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
                     <p className="text-foreground font-medium">
                       {item.solution}
                     </p>
